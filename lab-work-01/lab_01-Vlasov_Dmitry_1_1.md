@@ -10,6 +10,21 @@
 
 ![image](https://github.com/user-attachments/assets/e4cbf0c7-2c0b-485f-b113-17e53e7f29e2)
 
+#### 3.4.3 Математическая модель
+
+$$
+\begin{bmatrix} 
+a_{11} & a_{12} & a_{13} \\ 
+a_{21} & a_{22} & a_{23} \\
+a_{31} & a_{32} & a_{33} 
+\end{bmatrix} \to 
+\begin{bmatrix} 
+\frac{a_{11} + a_{12} + a_{13}}{3} & a_{12} & a_{13} \\ 
+\frac{a_{21} + a_{22} + a_{23}}{3} & a_{22} & a_{23} \\
+\frac{a_{31} + a_{32} + a_{33}}{3} & a_{32} & a_{33} 
+\end{bmatrix}
+$$
+
 ---
 
 ### Задача 2
