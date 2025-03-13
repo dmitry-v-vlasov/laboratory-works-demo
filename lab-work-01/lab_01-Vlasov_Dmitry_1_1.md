@@ -82,4 +82,34 @@ $$
 | denominator  | `double`  |  Знаменатель (вспомогательная переменная) |
 | u  | `double`  | Значение функции (результат) |
 
+#### Код программы
+
+```c
+#include <stdio.h>
+#include <math.h>
+
+int main(void) {
+    double x, y;
+    double sinxy;
+    double numerator, denominator; 
+    double u;
+
+    printf("Enter the first number: ");
+    scanf("%d", &x);
+
+    printf("Enter the second number: ");
+    scanf("%d", &y);
+
+    sinxy = sin(x + y);
+    numerator = 1 + sinxy * sinxy;
+    denominator = 2 + abs( x + 2 * x * x / ( 1 + abs(sinxy) ) ); 
+
+    u = numerator / denominator;
+
+    printf("Result: u(%.3lf, %.3lf) = %.6lf", x, y, u);
+
+    return 0;
+}
+```
+
 ---
